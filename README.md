@@ -2,7 +2,11 @@
 ISP452 Web Server for Minirep Feed
 
 # Prerequisite Steps
-1. Make an exception for port 5000 with firewalld: `sudo firewall-cmd --permanent --zone=public --add-port=5000/tcp`
+Make an exception for port 5000 with firewalld: `sudo firewall-cmd --permanent --zone=public --add-port=5000/tcp`
+
+OR
+
+`sudo ufw allow 5000/tcp`
 
 Note that this is not recommended for production environments. This will be for testing purposes only.
 
