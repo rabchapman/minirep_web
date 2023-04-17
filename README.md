@@ -2,11 +2,14 @@
 ISP452 Web Server for Minirep Feed
 
 # Prerequisite Steps
-Make an exception for port 5000 with firewalld: `sudo firewall-cmd --permanent --zone=public --add-port=5000/tcp`
+1. Make an exception for port 5000 with firewalld: `sudo firewall-cmd --permanent --zone=public --add-port=5000/tcp`
 
 OR
 
 `sudo ufw allow 5000/tcp`
+
+2. Install venv: `sudo apt install python3.8-venv`
+
 
 Note that this is not recommended for production environments. This will be for testing purposes only.
 
