@@ -16,7 +16,7 @@ Note that this is not recommended for production environments. This will be for 
 4. Create the virtual environment: `python -m venv .`
 5. Activate the virtual environment: `source ./bin/activate`
 6. Install the required packages: `pip3 install -r requirements.txt`
-7. Run the flask application: `flask run`
+7. Run the flask application: `flask run --host=0.0.0.0`
 
 # Verify
 Open a browser and browse to the the http://server3/block/ips. You should receive as response with the data below:
