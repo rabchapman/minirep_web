@@ -62,7 +62,7 @@ def ip(ip):
         except:
             return jsonify({'status_code':500,'message':'Failed to read block file'})
         
-        # Locate and reove the entry
+        # Locate and remove the entry to be deleted
         if ip in blocks.keys():
             blocks.pop(ip)
         else:
